@@ -26,6 +26,6 @@ if (nn <= 0 || nn > 86400) {                                        //patikrinam
     mm = mm - hh*60;
     ss = nn - (hh * 3600 + mm * 60);
     console.log(hh + ' val :' + mm + ' min :' + ss + ' sec');
-    document.getElementById("ats").innerHTML = hh + ' val :' + mm + ' min :' + ss + ' sec';
+    document.getElementById("ats").innerHTML = hh + ' val :' + mm + ' min : ' + ss + ' sec';
 }
 }
