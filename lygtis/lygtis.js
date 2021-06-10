@@ -6,6 +6,8 @@
 
 // *Išveskite konvertuotą sekunžių informacija į div.
 
+"use strict";
+
 let a, b, c, d, x1, x2;
 
 function diskriminantas() {
@@ -27,7 +29,7 @@ if (d<0) {
     console.log("Sprendinių nėra, nes Diskriminantas neigiamas");
     document.getElementById("ats").innerHTML = "Sprendinių nėra, nes Diskriminantas neigiamas";
     
-} else { if (d=0) {
+} else { if (d==0) {
 
     x1 = -b / (2*a);
     console.log("Sprendinys 1: " + x1);
