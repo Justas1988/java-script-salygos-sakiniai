@@ -36,7 +36,9 @@ let laikas = functionFinish - functionStart;
 
 console.log("Zingsniai: " + zingsniai);
 console.log("Pradzios laikas: " + startTime);
-console.log("Pradzios laikas: " + finishTime);
+console.log("Pabaigos laikas: " + finishTime);
+document.getElementById("pradzia").innerHTML = "Script started at: " + startTime;
+document.getElementById("pabaiga").innerHTML = "Script finished at: " + finishTime;
 document.getElementById("rezultatas").innerHTML = "Computer generated " + kiekis + " squares in " + laikas + " miliseconds!!!";
 console.log("Computer generated " + kiekis + " squares in " + laikas + " miliseconds");
 } )
