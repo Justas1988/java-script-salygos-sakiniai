@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kvadratai</title>
     <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
         .div-dydis {
             width: 40px;
             height: 40px;
@@ -26,18 +29,28 @@
         main {
             margin: 100px;
         }
+        
+        #rezultatas,
+        .green {
+            color: green;
+            font-size: 20px;
+            line-height: 40px;
+            font-weight: bolder;
+        
+
+        }
     </style>
 </head>
 <body>
     <main>
-    <label for="squares">Įveskite kiek norite kvadratų</label>
+    <label for="squares" class="green">Įveskite kiek norite kvadratų</label>
     <br>
     <input type="number" id="squares" />
     <br>
     <br>
     <button id="calc">Patvirtinti</button>
-    <br>
-    <br>
+    <p id="rezultatas"></p>
+
 
     <div class="container">    </div>
 

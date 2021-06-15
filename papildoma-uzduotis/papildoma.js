@@ -1,7 +1,9 @@
 "use strict"
 
 document.getElementById("calc").addEventListener("click", function() {
-
+let today = new Date();
+let functionStart = today.getTime();
+let startTime = today.getHours() + "hh:" + today.getMinutes() + "min:" + today.getSeconds() + "sec:" + today.getMilliseconds() + "ms";
 let zingsniai = 0;
 let kiekis = parseInt(document.getElementById("squares").value);
 console.log("Įvesta trikampių: " + kiekis);
@@ -27,7 +29,16 @@ for (let i=0; i<kiekis; i++) {
     
 }   
 }
+let endday = new Date();
+let functionFinish = endday.getTime();
+let finishTime = endday.getHours() + "hh:" + endday.getMinutes() + "min:" + endday.getSeconds() + "sec:" + endday.getMilliseconds() + "ms";
+let laikas = functionFinish - functionStart;
+
 console.log("Zingsniai: " + zingsniai);
+console.log("Pradzios laikas: " + startTime);
+console.log("Pradzios laikas: " + finishTime);
+document.getElementById("rezultatas").innerHTML = "Computer generated " + kiekis + " squares in " + laikas + " miliseconds!!!";
+console.log("Computer generated " + kiekis + " squares in " + laikas + " miliseconds");
 } )
 
 
